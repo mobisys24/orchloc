@@ -1,0 +1,25 @@
+name: orchloc
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - torch==1.13.1
+    - torchvision==0.14.1
+    - torchaudio==0.13.1
+    - seaborn
+    - pandas
+    - matplotlib
+    - pyyaml
+    - pytorch_lightning==1.9.3
+    - tensorboard==2.13.0
+    - chardet
+    - scipy
+    - scikit-learn
+    - einops
+    - torchviz
+    - setuptools==59.5.0
+    

@@ -1,0 +1,61 @@
+
+##### Parameters used for area a #####
+# some parameters are reused for area b
+# Training settings
+train_flag: True
+data_name: "csi_area_a.pth"
+save_model_name: "classifier_area_a.ckpt"
+frac_for_valid: 0.05
+frac_for_test: 0.25
+
+# Parameters for location classifier
+num_locs: 64
+input_dim: 16
+hidden_dim: 128
+n_layers: 3
+dropout_pra: 0.1
+learning_rate: 0.0001
+num_epochs: 200
+batch_size: 256
+
+
+##### New parameters for orchard #####
+location_vector_name: "0_location_vector.txt"
+num_rows: 8
+num_cols: 8
+row_dist: 6.1  # distance between rows
+col_dist: 4.9  # distance between columns
+
+r_cylinder: 0.09     # radius of the tree trunk. 0.508
+h_cylinder: 0.9144   # height of the tree trunk
+r_ellipsoid: 1.8288  # radius of the tree canopy
+h_ellipsoid: 4       # height of the tree canopy
+
+# density of points per unit volume
+density: 1000 
+maximum_comm_dis: 200.0
+# LoRa frequency in Hz
+lora_frequency: 903.9E6
+
+
+##### New parameters for pre-training CGM #####
+loc_dim: 7            # for location vector
+num_timesteps: 1000
+schedule: "linear"    # cosine, linear, quadratic, sigmoid
+data_channels: 2
+channel_dimension_scale: [1, 2, 4, 8]
+num_epochs_cgm: 500
+batch_size_cgm: 256
+learning_rate_cgm: 0.001
+cgm_pretrain_path: "1_pretrained_cgm.ckpt"
+
+
+##### New parameters for fine-tuning CGM #####
+data_name_ft: "csi_area_b.pth"
+ratios_locs: 0.25
+data_name_fake: "csi_area_b_genetated.pth"
+save_model_name_fake: "classifier_area_b.ckpt"
+num_epochs_cgm_ft: 50
+cgm_fine_tune_path: "2_finetuned_cgm.ckpt"
+
+

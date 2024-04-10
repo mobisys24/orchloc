@@ -1,0 +1,20 @@
+
+##### Parameters used for area a #####
+# some parameters are reused for area b
+# Training settings
+train_flag: True
+data_name: "csi_area_a.pth"
+save_model_name: "classifier_area_a.ckpt"
+frac_for_valid: 0.05
+frac_for_test: 0.25
+
+# Parameters for location classifier
+num_locs: 64
+input_dim: 16
+hidden_dim: 128
+n_layers: 3
+dropout_pra: 0.1
+learning_rate: 0.0001
+num_epochs: 200
+batch_size: 256
+
