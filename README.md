@@ -78,6 +78,8 @@ git clone https://github.com/mobisys24/orchloc.git
 
 This link leads to the download page for CUDA Toolkit 11.7, targeting Linux systems with x86_64 architecture and Ubuntu 22.04 (Jammy Jellyfish). If your system configuration is different, please navigate through the NVIDIA developer site to find the correct version for your setup.
 
+- **Note**: If you lack GPU hardware or prefer not to install the CUDA Toolkit, consider using online platforms such as Vast AI and Lambda Labs. Their virtual machines (VMs) include various versions of the CUDA Toolkit.
+
 
 
 ### 3.4 Conda Setup
