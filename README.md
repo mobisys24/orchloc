@@ -86,7 +86,7 @@ This link leads to the download page for CUDA Toolkit 11.7, targeting Linux syst
 
 To set up your environment, follow these steps:
 
-1. **Create and Activate the Conda Environment**: Use the `environment.yml` to create a Conda environment with all required dependencies.
+1. **Create the Conda Environment**: Use the `environment.yml` to create a Conda environment with all required dependencies.
 ```bash
 conda env create -f environment.yml
 ```
