@@ -91,7 +91,7 @@ To set up your environment, follow these steps:
 conda env create -f environment.yml
 ```
 
-Note: Ensure CUDA Toolkit 11 is installed on your system.
+Note: Ensure CUDA Toolkit 11.X is installed on your system.
 
 2. **Optimize Disk Space Usage**: If disk space is a concern, or if you prefer to organize your packages and environments in specific directories, configure Conda accordingly:
 ```bash
