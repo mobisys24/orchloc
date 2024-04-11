@@ -89,7 +89,6 @@ To set up your environment, follow these steps:
 1. **Create and Activate the Conda Environment**: Use the `environment.yml` to create a Conda environment with all required dependencies.
 ```bash
 conda env create -f environment.yml
-conda activate orchloc
 ```
 
 Note: Ensure CUDA Toolkit 11 is installed on your system.
